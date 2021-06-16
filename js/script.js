@@ -7,7 +7,7 @@ function offset(el) {
 window.addEventListener("scroll", function () {
     // Header
     const header = this.document.querySelector(".header");
-    if(window.scrollY > document.documentElement.clientHeight){
+    if(window.scrollY >= document.documentElement.clientHeight){
         header.classList.add("_fixed-header");
     } else{
         header.classList.remove("_fixed-header");
